@@ -1,0 +1,20 @@
+name: Run Tests on BrowserStack
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛠️ Clonar el repositorio
+        uses: actions/checkout@v4
+
+      - name: 🏗️ Instalar dependencias
+        run: npm install  # O el comando que uses (yarn, pnpm, etc.)
+
+      - name: 🚀 Ejecutar pruebas en BrowserStack
+        run: npm run wdio  # O el comando de tus pruebas

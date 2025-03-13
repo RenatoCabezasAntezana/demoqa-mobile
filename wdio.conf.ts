@@ -10,7 +10,7 @@ export const config: WebdriverIO.Config = {
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
     tsConfigPath: './tsconfig.json',
-    port: 4725,
+    //port: 4725,
     //
     // ==================
     // Specify Test Files
@@ -63,7 +63,7 @@ export const config: WebdriverIO.Config = {
         "platformName": "Android",
         "appium:deviceName": "Samsung Galaxy S22 Ultra",
         "appium:platformVersion": "12.0",
-        "appium:udid": "emulator-5554",
+        //"appium:udid": "emulator-5554",
         'appium:app': 'bs://f0e148966ca9bf008318b7d813d8cd51fce71340'
 
         //local

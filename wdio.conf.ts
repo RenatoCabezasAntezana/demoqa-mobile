@@ -1,7 +1,7 @@
 export const config: WebdriverIO.Config = {
 
-    // user: "renatocabezasant_5Ud437",
-    // key: "RQ8BuKQye16EtTaEkxs6",
+    user: "renatocabezasant_5Ud437",
+    key: "RQ8BuKQye16EtTaEkxs6",
 
     //
     // ====================
@@ -61,15 +61,15 @@ export const config: WebdriverIO.Config = {
         //BrowserStack
         "appium:automationName": "UiAutomator2",
         "platformName": "Android",
-       // "appium:deviceName": "Samsung Galaxy S22 Ultra",
-       // "appium:platformVersion": "12.0",
+        "appium:deviceName": "Samsung Galaxy S22 Ultra",
+        "appium:platformVersion": "12.0",
         "appium:udid": "emulator-5554",
-        //'appium:app': 'bs://f0e148966ca9bf008318b7d813d8cd51fce71340'
+        'appium:app': 'bs://f0e148966ca9bf008318b7d813d8cd51fce71340'
 
         //local
-        'appium:app': 'App/Android-MyDemoAppRN.1.3.0.build-244.apk',
-        "appium:deviceName": "AVD DEVICES - V15",
-        "appium:platformVersion": "11.0",
+        //'appium:app': 'App/Android-MyDemoAppRN.1.3.0.build-244.apk',
+        //"appium:deviceName": "AVD DEVICES - V15",
+        //"appium:platformVersion": "11.0",
 
     }],
 
@@ -120,8 +120,8 @@ export const config: WebdriverIO.Config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['appium'],
-    //services: ['browserstack'],
+    //services: ['appium'],
+    services: ['browserstack'],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
